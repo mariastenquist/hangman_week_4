@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Hangman-game</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Bungee|Indie+Flower" rel="stylesheet">
+</head>
+<body class="wrapper">
+  <h1>Welcome to the Hangman Game!<br>
+  Woodland Critters Abound</h1>
+  <h3>Fill in the blanks below: </h3>
+  <div id="dashes"></div>
+  <form name="rounds">
+    <input id="user_input" name="guess_character" type="text" maxlength="1" placeholder="letter">
+    <input class="buttons" name="guessbutton" type="button" value="Submit a Guess" onClick="checkCharacter()">
+    <p id="wrongLetters">Wrong Letter Guesses: </p>
+    <p id="success"></p>
+    <p id="failure"></p>
+    <input class="buttons" name="reload" type="button" value="Play Again" onClick="location.reload()">
+  </form>
+<script  src="js/index.js"></script>
+</body>
+</html>
